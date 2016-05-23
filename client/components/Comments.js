@@ -34,8 +34,8 @@ export default class Comments extends React.Component {
         {this.props.postComments.map(this.renderComment.bind(this))}
 
         <form ref="commentForm" className="comment-form" onSubmit={this.handleSubmit.bind(this)}>
-          <input type="text" ref="author" placeholder="author" />
-          <input type="text" ref="comment" placeholder="comment" />
+          <input type="text" ref="author" placeholder="Your name" />
+          <input type="text" ref="comment" placeholder="Your comment" />
           <input type="submit" hidden />
         </form>
       </div>

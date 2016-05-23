@@ -1,22 +1,25 @@
 {
-  "name": "learn-redux",
-  "version": "1.0.0",
-  "description": ":) ",
+  "private": true,
+  "name": "reduxstagram",
+  "version": "0.0.0",
+  "description": "Redux Example",
+  "license": "MIT",
+  "author": {
+    "name": "Federico Knüssel",
+    "email": "fknussel@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fknussel/reduxstagram.git"
+  },
   "scripts": {
     "build:webpack": "NODE_ENV=production webpack --config webpack.config.prod.js",
     "build": "npm run clean && npm run build:webpack",
     "test": "NODE_ENV=production mocha './tests/**/*.spec.js' --compilers js:babel-core/register",
     "clean": "rimraf dist",
     "start": "node devServer.js",
-    "tunnel": "browser-sync start --proxy localhost:7770 --tunnel wesbos"
+    "tunnel": "browser-sync start --proxy localhost:6789 --tunnel wesbos"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wesbos/Learn-Redux.git"
-  },
-  "author": "Wes Bos",
-  "license": "MIT",
-  "homepage": "https://github.com/wesbos/Learn-Redux",
   "dependencies": {
     "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
@@ -32,7 +35,6 @@
     "eslint-plugin-babel": "^3.2.0",
     "eslint-plugin-react": "^5.0.1",
     "express": "^4.13.4",
-    "raven-js": "^2.3.0",
     "react": "^15.0.2",
     "react-addons-css-transition-group": "^15.0.2",
     "react-dom": "^15.0.2",

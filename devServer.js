@@ -13,15 +13,15 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function(req, res) {
+app.get('*', function (req, res) {
   res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(7770, 'localhost', function(err) {
+app.listen(6789, 'localhost', function (err) {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at http://localhost:7770');
+  console.log('Listening at http://localhost:6789');
 });
